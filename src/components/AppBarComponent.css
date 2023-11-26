@@ -1,0 +1,12 @@
+.tw-connected-wallet {
+    padding: 3px 12px !important;
+}
+.tw-connected-wallet > img {
+    display: none !important;
+}
+
+@media screen and (min-width: 768px) {
+    .tw-connected-wallet > img {
+        display: 'block' !important;
+    }
+}

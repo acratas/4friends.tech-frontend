@@ -1,0 +1,21 @@
+.cs-main-container--responsive .cs-search {
+    display: flex !important;
+}
+
+.cs-conversation-header__avatar {
+    overflow: hidden;
+}
+
+#chat {
+    margin-top: -16px;
+    height: calc(100vh - 65px);
+    position: relative;
+}
+
+@media screen and (max-width: 599px) {
+    #chat {
+        height: calc(100vh - 57px);
+    }
+}
+
+

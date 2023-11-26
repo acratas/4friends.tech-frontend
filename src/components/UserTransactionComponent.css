@@ -1,0 +1,12 @@
+.twitter-data {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.twitter-data span {
+    display: inline-block;
+    padding: 0 4px;
+    border-left: 1px solid #ddd;
+}
