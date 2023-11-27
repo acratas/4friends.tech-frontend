@@ -28,7 +28,6 @@ export const UserLookupComponent = ({address, ...props}: any) => {
         };
         const debouncedFetchData = debounce(_, 500);
         debouncedFetchData();
-        // Oczyść timeout podczas czyszczenia efektu
         return () => {
             debouncedFetchData.clear();
         };

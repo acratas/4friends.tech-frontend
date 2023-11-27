@@ -57,7 +57,7 @@ export const useApi = () => {
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 const cacheData = (input: string, data: any) => {
-    const currentTime = Date.now(); // Znacznik czasu w milisekundach
+    const currentTime = Date.now();
     const cacheObject = {
         timestamp: currentTime,
         data: data
@@ -101,13 +101,12 @@ export const ApiProvider = ({children, baseUrl = ''}) => {
 
 
     useEffect(() => {
-        // console.log('useEffect', address)
-        fetchLoggedUserData(address); // Pobierz dane użytkownika przy pierwszym montowaniu komponentu
+        fetchLoggedUserData(address);
     }, [address]);
 
     useInterval(() => {
-        fetchLoggedUserData(address); // Pobierz dane użytkownika co godzinę
-    }, 3600000); // 3600000 ms = 1 godzina
+        fetchLoggedUserData(address);
+    }, 3600000);
 
     const fetchLoggedUserData = async (address: string | undefined) => {
         if (!address) return;

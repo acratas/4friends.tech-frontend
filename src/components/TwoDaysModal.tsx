@@ -8,7 +8,6 @@ const TwoDaysModal = () => {
 
     const handleOpen = () => {
         setOpen(true);
-        // Zapisz aktualny timestamp w LocalStorage
         localStorage.setItem('lastShown', Date.now().toString());
     };
 

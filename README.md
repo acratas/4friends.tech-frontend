@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installation
+
+1. Clone this repository
+2. Get Google Recaptcha v3 API key (https://www.google.com/recaptcha/about/)
+3. Change recaptcha key in [src/lib/Captcha.ts](src/lib/Captcha.ts)
+
 ## Available Scripts
 
 In the project directory, you can run:

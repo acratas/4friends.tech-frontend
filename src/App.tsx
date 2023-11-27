@@ -36,14 +36,14 @@ const commonComponents = {
         styleOverrides: {
             root: {
                 '@media (max-width:600px)': {
-                    padding: '8px 8px', // Dostosuj według potrzeb
+                    padding: '8px 8px',
                 }
             },
         },
     },
     MuiCardHeader: {
         styleOverrides: {
-            title: { // Dla tytułu w CardHeader
+            title: {
                 '@media (max-width:600px)': {
                     fontSize: '.875rem',
                 },

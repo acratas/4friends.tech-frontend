@@ -11,7 +11,6 @@ class TxCache {
     private txs: {[key: string]: boolean} = {};
 
     private constructor() {
-        // Prywatny konstruktor, aby uniemożliwić tworzenie nowych instancji klasy za pomocą operatora `new`
     }
 
     static getInstance(): TxCache {
